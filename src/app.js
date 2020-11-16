@@ -30,6 +30,20 @@
     giveATry.addEventListener('click', function(){
         if(participantNames.length === 0){
             alert('There is no entry');
+        }else{
+            let shuffledNames = shuffle(participantNames);
+            for(let i = 1; i < shuffledNames.length; i++){
+                (function(i, count){
+                    
+                    setTimeout(() => {
+                        let rand = Math.floor(Math.random() * (shuffledNames.length));
+                        display.innerHTML = shuffledNames[rand];
+                    }, i);
+                    
+            
+
+                })(i*100, i)
+            }
         }
     });
 
@@ -43,7 +57,7 @@
     function shuffle(array) {
 
         let shuffledArray = [...array];
-        
+
         for(let i = shuffledArray.length - 1; i > 0; i--){
             let randomNumber = Math.floor(Math.random() * (i + 1));
             let temporary = shuffledArray[randomNumber];
