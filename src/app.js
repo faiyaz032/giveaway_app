@@ -16,6 +16,7 @@
 
     inp.addEventListener('keypress', function(event){
         if(event.key === 'Enter'){
+            document.getElementById('button').click();
             let newNames = event.target.value.split(', ');
             if(newNames[0] !== ''){
                 newNames.forEach(name => {

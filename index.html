@@ -13,18 +13,21 @@
             <div class="col-md-6">
                <div class="form-group">
                   <h3 class="text-warning">Enter Names</h3>
-                  <textarea name="" id="inp" class="form-control" rows="17"></textarea>
+                  <input name="" id="inp" class="form-control" rows="17">
                </div>
                <div>
-                  <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  <button id="button" class="btn btn-secondary" type="button" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                      See Names
                    </button>
                  </p>
-                 <div class="collapse" id="collapseExample">
-                   <div class="card card-body">
-                     <ul class="list-group" id="name-list">
-                        <!-- li is coming from app.js -->
-                     </ul>
+                 <div class="mt-4">
+                    <h4 class="text-warning">Participants</h4>
+                  <div class="" id="collapseExample">
+                     <div class="card card-body">
+                       <ul class="list-group" id="name-list">
+                          <!-- li is coming from app.js -->
+                       </ul>
+                     </div>
                    </div>
                  </div>
                </div>
@@ -44,17 +47,17 @@
    
                <div class="card card-body">
                   <div class="card-title text-center">
-                     <h4>Winners</h4>
+                     <h4 class="text-success">Winners</h4>
                   </div>
                  <ul class="list-group" id="name-list">
                     <li class="list-group-item">
-                       <strong>First Winner: <span id="first-position"></span></strong>
+                       <strong>First Winner: <span id="first-position" class="text-success"></span></strong>
                     </li>
                     <li class="list-group-item">
-                     <strong>Second Winner:  <span id="second-position"></span></strong>
+                     <strong>Second Winner:  <span id="second-position" class="text-success"></span></strong>
                   </li>
                   <li class="list-group-item">
-                     <strong>Third Winner: <span id="third-position"></span></strong>
+                     <strong>Third Winner: <span id="third-position" class="text-success"></span></strong>
                   </li>
                  </ul>
                </div>
