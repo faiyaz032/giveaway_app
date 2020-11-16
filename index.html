@@ -6,17 +6,17 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
       <title>Giveaway app in javascript</title>
    </head>
-   <body>
+   <body class="bg-dark">
       <div class="container">
-         <h1 class="text-center my-3 display-4">Give Away App in JavaScript</h1>
+         <h1 class="text-center my-3 display-4 mb-5 text-primary">Give Away App in JavaScript</h1>
          <div class="row">
             <div class="col-md-6">
                <div class="form-group">
-                  <label for="inp">Enter Names</label>
+                  <h3 class="text-warning">Enter Names</h3>
                   <textarea name="" id="inp" class="form-control" rows="17"></textarea>
                </div>
                <div>
-                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                      See Names
                    </button>
                  </p>
@@ -32,14 +32,14 @@
             <div class="col-md-6">
 
               <div>
-               <label for="">Output Display</label>
+               <h3 class="text-warning">Name Shuffle</h3>
                <div class="card card-body text-center">
-                  <h2 id="display">Display</h2>
+                  <h2 class="text-info" id="display">Display</h2>
                </div>
               </div>
               
               <div class="text-center">
-                 <button class="btn btn-success my-4" id="give-a-try">Give a try</button>
+                 <button class="btn btn-secondary my-4" id="give-a-try">Give a try</button>
               </div>
    
                <div class="card card-body">
@@ -48,13 +48,13 @@
                   </div>
                  <ul class="list-group" id="name-list">
                     <li class="list-group-item">
-                       <strong>First Winner <span id="first-position"></span></strong>
+                       <strong>First Winner: <span id="first-position"></span></strong>
                     </li>
                     <li class="list-group-item">
-                     <strong>Second Winner <span id="second-position"></span></strong>
+                     <strong>Second Winner:  <span id="second-position"></span></strong>
                   </li>
                   <li class="list-group-item">
-                     <strong>Third Winner <span id="third-position"></span></strong>
+                     <strong>Third Winner: <span id="third-position"></span></strong>
                   </li>
                  </ul>
                </div>
