@@ -38,9 +38,46 @@
                     setTimeout(() => {
                         let rand = Math.floor(Math.random() * (shuffledNames.length));
                         display.innerHTML = shuffledNames[rand];
+
+                        if(count === shuffledNames.length - 1){
+
+                            if(!firstPosition.innerHTML){
+                                firstPosition.innerHTML = shuffledNames[rand];
+                                let index = participantNames.indexOf(shuffledNames[rand]);
+                                participantNames.splice(index, 1);
+                            }else if(!secondPosition.innerHTML){
+                                secondPosition.innerHTML = shuffledNames[rand];
+                                let index = participantNames.indexOf(shuffledNames[rand]);
+                                participantNames.splice(index, 1);
+                            }else if(!thirdPosition.innerHTML){
+                                thirdPosition.innerHTML = shuffledNames[rand];
+                                let index = participantNames.indexOf(shuffledNames[rand]);
+                                participantNames.splice(index, 1);
+                            }else {
+                                alert ('Draw is completed succesfully. Congratulations to the winners!');
+                            }
+                        }
+
                     }, i);
                     
-            
+                    if(count === shuffledNames.length - 1){
+
+                        if(!firstPosition.innerHTML){
+                            firstPosition.innerHTML = shuffledNames[rand];
+                            let index = participantNames.indexOf(shuffledNames[rand]);
+                            participantNames.splice(index, 1);
+                        }else if(!secondPosition.innerHTML){
+                            secondPosition.innerHTML = shuffledNames[rand];
+                            let index = participantNames.indexOf(shuffledNames[rand]);
+                            participantNames.splice(index, 1);
+                        }else if(!thirdPosition.innerHTML){
+                            thirdPosition.innerHTML = shuffledNames[rand];
+                            let index = participantNames.indexOf(shuffledNames[rand]);
+                            participantNames.splice(index, 1);
+                        }else {
+                            alert ('Draw is completed succesfully. Congratulations to the winners!');
+                        }
+                    }
 
                 })(i*100, i)
             }
@@ -66,11 +103,6 @@
         }
         return shuffledArray;
     }
-    console.log(shuffle([1,2,3,4,5,6,7,8,9]));
-    console.log(shuffle([1,2,3,4,5,6,7,8,9]));
-    console.log(shuffle([1,2,3,4,5,6,7,8,9]));
-    console.log(shuffle([1,2,3,4,5,6,7,8,9]));
-    console.log(shuffle([1,2,3,4,5,6,7,8,9]));
-    console.log(shuffle([1,2,3,4,5,6,7,8,9]));
+
 
     
