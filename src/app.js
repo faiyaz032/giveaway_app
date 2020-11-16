@@ -27,11 +27,36 @@
         }
     })
 
+    giveATry.addEventListener('click', function(){
+        if(participantNames.length === 0){
+            alert('There is no entry');
+        }
+    });
+
     function createListItem(name){
         let li = document.createElement('li');
         li.className = 'list-group-item';
         li.innerHTML = name;
         return li;
     }
+
+    function shuffle(array) {
+
+        let shuffledArray = [...array];
+        
+        for(let i = shuffledArray.length - 1; i > 0; i--){
+            let randomNumber = Math.floor(Math.random() * (i + 1));
+            let temporary = shuffledArray[randomNumber];
+            shuffledArray[randomNumber] = shuffledArray[i];
+            shuffledArray[i] = temporary;
+        }
+        return shuffledArray;
+    }
+    console.log(shuffle([1,2,3,4,5,6,7,8,9]));
+    console.log(shuffle([1,2,3,4,5,6,7,8,9]));
+    console.log(shuffle([1,2,3,4,5,6,7,8,9]));
+    console.log(shuffle([1,2,3,4,5,6,7,8,9]));
+    console.log(shuffle([1,2,3,4,5,6,7,8,9]));
+    console.log(shuffle([1,2,3,4,5,6,7,8,9]));
 
     
